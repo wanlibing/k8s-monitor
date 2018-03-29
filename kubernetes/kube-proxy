@@ -1,0 +1,4 @@
+KUBE_LOGTOSTDERR="--logtostderr=true"
+KUBE_LOG_LEVEL=" "
+NODE_HOSTNAME="--hostname-override=k8s-node1"
+KUBE_MASTER="--master=http://172.31.229.20:8080"

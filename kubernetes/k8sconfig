@@ -1,0 +1,19 @@
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority: kubernetes/ssl/ca.crt
+    server: https://xxx.xx.xx.xx:xxxx
+  name: jike
+contexts:
+- context:
+    cluster: jike
+    user: jike
+  name: jike
+current-context: jike
+kind: Config
+preferences: {}
+users:
+- name: jike
+  user:
+    client-certificate: kubernetes/ssl/client.crt
+    client-key: kubernetes/ssl/client.key
